@@ -6,7 +6,6 @@ import time
 from operator import mul
 from itertools import starmap
 
-#SKnight20210307
 def generateWhiteListHighestVolume(exchange, stake_currency):
     #generateWhiteList with highest volume in past 24hrs - nonTradeAblePairs
     exchange_data = requests.get(f'https://coinmarketcap.com/exchanges/%s/'%(exchange))
@@ -15,7 +14,6 @@ def generateWhiteListHighestVolume(exchange, stake_currency):
     #print(soup.prettify)
 
     data = soup.find('script', id="__NEXT_DATA__",type="application/json")
-    
     
     pairs = {}
     coins = {}
