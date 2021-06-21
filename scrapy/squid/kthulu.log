@@ -1,0 +1,432 @@
+INFO:scrapy.utils.log:Scrapy 2.5.0 started (bot: squid)
+INFO:scrapy.utils.log:Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.8.5 (default, Jan 27 2021, 15:41:15) - [GCC 9.3.0], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Linux-5.8.0-53-generic-x86_64-with-glibc2.29
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.epollreactor.EPollReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'squid',
+ 'NEWSPIDER_MODULE': 'squid.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['squid.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 5579544d964e842a
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:root:Starting Kthulu v0.012021-05-18 20:08:27.699535
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+WARNING:py.warnings:/home/alumtox/Documents/tutorials/automation_starter_pack/web_scraping_basics/env/lib/python3.8/site-packages/scrapy/spidermiddlewares/offsite.py:65: URLWarning: allowed_domains accepts only domains, not URLs. Ignoring URL entry https://coinmarketcap.com/exchanges/kraken/ in allowed_domains.
+  warnings.warn(message, URLWarning)
+
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6038
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://coinmarketcap.com/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://coinmarketcap.com/exchanges/kraken/> (referer: None)
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 461,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 75055,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 1.148245,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 19, 1, 8, 28, 870345),
+ 'httpcompression/response_bytes': 555233,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 59113472,
+ 'memusage/startup': 59113472,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 5, 19, 1, 8, 27, 722100)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.5.0 started (bot: squid)
+INFO:scrapy.utils.log:Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.8.5 (default, Jan 27 2021, 15:41:15) - [GCC 9.3.0], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Linux-5.8.0-53-generic-x86_64-with-glibc2.29
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.epollreactor.EPollReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'squid',
+ 'NEWSPIDER_MODULE': 'squid.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['squid.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 9b7d530cfa2b185d
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:root:Starting Kthulu v0.012021-05-18 20:10:51.875519
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+WARNING:py.warnings:/home/alumtox/Documents/tutorials/automation_starter_pack/web_scraping_basics/env/lib/python3.8/site-packages/scrapy/spidermiddlewares/offsite.py:65: URLWarning: allowed_domains accepts only domains, not URLs. Ignoring URL entry https://coinmarketcap.com/exchanges/kraken/ in allowed_domains.
+  warnings.warn(message, URLWarning)
+
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6038
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://coinmarketcap.com/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://coinmarketcap.com/exchanges/kraken/> (referer: None)
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 461,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 74929,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 1.158353,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 19, 1, 10, 53, 64500),
+ 'httpcompression/response_bytes': 555233,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 58945536,
+ 'memusage/startup': 58945536,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 5, 19, 1, 10, 51, 906147)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.5.0 started (bot: squid)
+INFO:scrapy.utils.log:Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.8.5 (default, Jan 27 2021, 15:41:15) - [GCC 9.3.0], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Linux-5.8.0-53-generic-x86_64-with-glibc2.29
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.epollreactor.EPollReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'squid',
+ 'NEWSPIDER_MODULE': 'squid.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['squid.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 5e44199de83017d2
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:root:Starting Kthulu v0.012021-05-18 20:12:25.504306
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+WARNING:py.warnings:/home/alumtox/Documents/tutorials/automation_starter_pack/web_scraping_basics/env/lib/python3.8/site-packages/scrapy/spidermiddlewares/offsite.py:65: URLWarning: allowed_domains accepts only domains, not URLs. Ignoring URL entry https://coinmarketcap.com/exchanges/kraken/ in allowed_domains.
+  warnings.warn(message, URLWarning)
+
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6038
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://coinmarketcap.com/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://coinmarketcap.com/exchanges/kraken/> (referer: None)
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 461,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 75327,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 1.672949,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 19, 1, 12, 27, 210325),
+ 'httpcompression/response_bytes': 555169,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 59199488,
+ 'memusage/startup': 59199488,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 5, 19, 1, 12, 25, 537376)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.5.0 started (bot: squid)
+INFO:scrapy.utils.log:Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.8.5 (default, Jan 27 2021, 15:41:15) - [GCC 9.3.0], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Linux-5.8.0-53-generic-x86_64-with-glibc2.29
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.epollreactor.EPollReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'squid',
+ 'NEWSPIDER_MODULE': 'squid.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['squid.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 63c6ede912622a12
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:root:Starting Kthulu v0.012021-05-18 20:13:34.068443
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+WARNING:py.warnings:/home/alumtox/Documents/tutorials/automation_starter_pack/web_scraping_basics/env/lib/python3.8/site-packages/scrapy/spidermiddlewares/offsite.py:65: URLWarning: allowed_domains accepts only domains, not URLs. Ignoring URL entry https://coinmarketcap.com/exchanges/kraken/ in allowed_domains.
+  warnings.warn(message, URLWarning)
+
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6038
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://coinmarketcap.com/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://coinmarketcap.com/exchanges/kraken/> (referer: None)
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 461,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 75007,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 1.141109,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 19, 1, 13, 35, 235245),
+ 'httpcompression/response_bytes': 555169,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 58880000,
+ 'memusage/startup': 58880000,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 5, 19, 1, 13, 34, 94136)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.5.0 started (bot: squid)
+INFO:scrapy.utils.log:Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.8.5 (default, Jan 27 2021, 15:41:15) - [GCC 9.3.0], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Linux-5.8.0-53-generic-x86_64-with-glibc2.29
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.epollreactor.EPollReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'squid',
+ 'NEWSPIDER_MODULE': 'squid.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['squid.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 70543bb192c9d00f
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:root:Starting Kthulu v0.012021-05-18 20:15:57.597361
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+WARNING:py.warnings:/home/alumtox/Documents/tutorials/automation_starter_pack/web_scraping_basics/env/lib/python3.8/site-packages/scrapy/spidermiddlewares/offsite.py:65: URLWarning: allowed_domains accepts only domains, not URLs. Ignoring URL entry https://coinmarketcap.com/exchanges/kraken/ in allowed_domains.
+  warnings.warn(message, URLWarning)
+
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6038
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://coinmarketcap.com/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://coinmarketcap.com/exchanges/kraken/> (referer: None)
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 461,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 75174,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 1.184554,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 19, 1, 15, 58, 806716),
+ 'httpcompression/response_bytes': 555169,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 59035648,
+ 'memusage/startup': 59035648,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 5, 19, 1, 15, 57, 622162)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.5.0 started (bot: squid)
+INFO:scrapy.utils.log:Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.8.5 (default, Jan 27 2021, 15:41:15) - [GCC 9.3.0], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Linux-5.8.0-53-generic-x86_64-with-glibc2.29
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.epollreactor.EPollReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'squid',
+ 'NEWSPIDER_MODULE': 'squid.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['squid.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: da88fa8a40e21f8c
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:root:Starting Kthulu v0.012021-05-18 20:17:04.038020
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+WARNING:py.warnings:/home/alumtox/Documents/tutorials/automation_starter_pack/web_scraping_basics/env/lib/python3.8/site-packages/scrapy/spidermiddlewares/offsite.py:65: URLWarning: allowed_domains accepts only domains, not URLs. Ignoring URL entry https://coinmarketcap.com/exchanges/kraken/ in allowed_domains.
+  warnings.warn(message, URLWarning)
+
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6038
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://coinmarketcap.com/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://coinmarketcap.com/exchanges/kraken/> (referer: None)
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 461,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 75009,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 1.157397,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 19, 1, 17, 5, 220638),
+ 'httpcompression/response_bytes': 555169,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 58908672,
+ 'memusage/startup': 58908672,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 5, 19, 1, 17, 4, 63241)}
+INFO:scrapy.core.engine:Spider closed (finished)
